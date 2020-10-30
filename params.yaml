@@ -1,0 +1,14 @@
+base_path:
+  "gs://nextflow-pilot/test_data"
+reads:
+  "$params.base_path/reads/*_R{1,2}_*.fastq.gz"
+bwa_index:
+  "params.base_path/bwa_index/bwa-index.tar.gz"
+karyo_features:
+  "params.base_path/features/karyo.bed"
+spikein_features:
+  "params.base_path/features/native.bed"
+hmcp_ref:
+  "params.base_path/hmcp/native.fa"
+hmcp_ref_idx:
+  "params.base_path/hmcp/native.fa.fai"
