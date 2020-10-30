@@ -233,7 +233,7 @@ dockerhub {
         includeConfig "../scopes/process.standard.config"
         
         // Override the standard errorStrtegy
-        errorStrategy = 'retry
+        errorStrategy = 'retry'
         
         // Add new field specific to this profile
         maxRetries = 3 
