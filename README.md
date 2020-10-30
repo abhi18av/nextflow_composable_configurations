@@ -275,3 +275,11 @@ The answer to this is, **mostly yes**, though it also depends on how you wish to
 ```
 
 ...but it ends up increasing the nesting too much. As a heuristic, it's recommended that you compose the profiles using the standard scopes and then override/add the fields which are specific to that pipeline.
+
+
+
+## NOTE
+
+Please note that it is more idiomatic NOT to specify the  `params` scope in the `config` file and instead rely on the `params.yaml` for that. As a thumb rule, all **executor level details** and **profiles** etc should be in the `config` and all `file` path related data or custom pipeline `flags` should be in `params.yaml` or `params.json`
+
+Plus, you can use this YAML/JSON directly with `Tower`.
